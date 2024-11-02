@@ -1,9 +1,42 @@
 <html>
     <head>
         <title>Worlds Worse Website</title>
-        <link rel="stylesheet" href="main.css">
+        <style>
+            body {
+                background-color: red;
+                color: #eb5e34;
+                font-family: "Comic Sans MS", "Comic Sans", cursive;
+                
+            }
+
+            @keyframes size-changing-text {
+                0% {font-size: 1;}
+                30% {font-size: 200;}
+                70% {font-size: 200;}
+                100% {font-size: 1;}
+            }
+
+            @keyframes rotating-text {
+                0% {transform: rotate(0deg);}
+                100% {transform: rotate(360deg);}
+            }
+
+            h1 {
+                animation-name: size-changing-text;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+            }
+
+            p {
+                animation-name: rotating-text;
+                animation-duration: 20s;
+                animation-iteration-count: infinite;
+                font-size: 50;
+            }
+        </style>
     </head>
     <body>
         <h1>Worlds Worse Website!!!</h1>
+        <p>Hello!!! Welcome to our website!!! I love css, and personally I think I'm quite good at it!!!</p>
     </body>
 </html>
